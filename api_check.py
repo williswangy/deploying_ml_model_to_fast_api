@@ -2,7 +2,7 @@ import requests
 import json
 
 #url = "enter heroku web app url here"
-url = "https://fastapiproject3.herokuapp.com/"
+url = "https://fastapiproject3.herokuapp.com/inference/"
 
 
 # explicit the sample to perform inference on
