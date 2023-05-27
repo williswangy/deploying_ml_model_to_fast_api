@@ -4,9 +4,9 @@ import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from starter.starter.ml.data import process_data
+from starter.work.ml.data import process_data
 
-from model import train_model, compute_model_metrics, inference, compute_slices, compute_confusion_matrix
+from starter.work.ml.model import train_model, compute_model_metrics, inference, compute_slices, compute_confusion_matrix
 
 logging.basicConfig(filename='journal.log', level=logging.INFO, filemode='a', format='%(name)s - %(levelname)s - %(message)s')
 
@@ -42,6 +42,7 @@ def evaluate_and_log_model(model, X_test, y_test, lb):
 
     cm = compute_confusion_matrix(y_test, preds, labels=list(lb.classes_))
     logging.info(f"Confusion matrix:\n{cm}")
+    return preds  # returning the preds
 
 def compute_slices_and_save_to_file(data, features, y_test, preds, savepath):
     remove_file_if_exists(savepath)
@@ -98,7 +99,7 @@ else:
     model = train_and_save_model(X_train, y_train, savepath, filenames)
 
 # Evaluate and log the model
-evaluate_and_log_model(model, X_test, y_test, lb)
+preds =evaluate_and_log_model(model, X_test, y_test, lb)
 
 # Compute slices and save results to a file
 compute_slices_and_save_to_file(test, cat_features, y_test, preds, "./slice_output.txt")

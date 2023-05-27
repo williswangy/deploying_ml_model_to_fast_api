@@ -1,0 +1,125 @@
+root - INFO - Classification target labels: ['<=50K', '>50K']
+root - INFO - precision:0.775, recall:0.653, fbeta:0.709
+root - INFO - Confusion matrix:
+[[6971  446]
+ [ 817 1535]]
+root - INFO - Performance on slice workclass
+root - INFO -      feature     feature value n_samples precision    recall     fbeta
+0  workclass           Private      6759  0.776033  0.637908  0.700224
+1  workclass  Self-emp-not-inc       786  0.754601  0.530172  0.622785
+2  workclass      Self-emp-inc       349  0.804878  0.808824  0.806846
+3  workclass         Local-gov       641  0.794702  0.685714  0.736196
+4  workclass                 ?       548  0.607143  0.326923     0.425
+5  workclass         State-gov       384  0.762376  0.740385   0.75122
+6  workclass       Federal-gov       299  0.764228  0.831858   0.79661
+7  workclass       Without-pay         3       1.0       1.0       1.0
+root - INFO - Performance on slice education
+root - INFO -       feature feature value n_samples precision    recall     fbeta
+0   education       HS-grad      3116  0.776471  0.386719  0.516297
+1   education   Prof-school       177  0.912409  0.912409  0.912409
+2   education       Masters       534  0.838488   0.85614  0.847222
+3   education     Assoc-voc       411       0.7  0.686275  0.693069
+4   education       5th-6th       103       1.0  0.333333       0.5
+5   education       7th-8th       201      0.75  0.272727       0.4
+6   education    Assoc-acdm       305   0.73913  0.708333  0.723404
+7   education  Some-college      2242  0.694864  0.537383  0.606061
+8   education     Bachelors      1552  0.766021  0.796899  0.781155
+9   education          11th       359  0.909091  0.434783  0.588235
+10  education          10th       280       1.0  0.294118  0.454545
+11  education          12th       131      0.25  0.111111  0.153846
+12  education       1st-4th        56       1.0  0.333333       0.5
+13  education     Preschool        13       1.0       1.0       1.0
+14  education           9th       158       1.0  0.111111       0.2
+15  education     Doctorate       131      0.81   0.84375  0.826531
+root - INFO - Performance on slice marital-status
+root - INFO -           feature          feature value  ...    recall     fbeta
+0  marital-status               Divorced  ...  0.455128  0.601695
+1  marital-status     Married-civ-spouse  ...  0.685885  0.724219
+2  marital-status                Widowed  ...  0.407407   0.52381
+3  marital-status          Never-married  ...   0.46875  0.594059
+4  marital-status  Married-spouse-absent  ...  0.333333       0.5
+5  marital-status              Separated  ...  0.526316  0.689655
+6  marital-status      Married-AF-spouse  ...       0.0       0.0
+
+[7 rows x 6 columns]
+root - INFO - Performance on slice occupation
+root - INFO -        feature      feature value n_samples precision    recall     fbeta
+0   occupation       Adm-clerical      1145      0.73  0.480263  0.579365
+1   occupation     Prof-specialty      1267   0.80339  0.831579  0.817241
+2   occupation    Exec-managerial      1160  0.778547  0.786713  0.782609
+3   occupation       Craft-repair      1235  0.763736  0.489437  0.596567
+4   occupation  Machine-op-inspct       580  0.852941  0.337209  0.483333
+5   occupation              Sales      1101  0.761134  0.641638  0.696296
+6   occupation      Other-service      1027       0.5  0.243243  0.327273
+7   occupation    Farming-fishing       297  0.866667  0.371429      0.52
+8   occupation                  ?       548  0.607143  0.326923     0.425
+9   occupation       Tech-support       286  0.786517  0.744681  0.765027
+10  occupation  Handlers-cleaners       402  0.727273  0.347826  0.470588
+11  occupation    Protective-serv       194      0.75  0.545455  0.631579
+12  occupation   Transport-moving       484  0.707317  0.329545  0.449612
+13  occupation    Priv-house-serv        42       1.0       1.0       1.0
+14  occupation       Armed-Forces         1       1.0       1.0       1.0
+root - INFO - Performance on slice relationship
+root - INFO -         feature   feature value n_samples precision    recall     fbeta
+0  relationship       Unmarried      1033  0.896552  0.342105  0.495238
+1  relationship         Husband      3946   0.77095  0.696188  0.731664
+2  relationship   Not-in-family      2551  0.818182  0.493671  0.615789
+3  relationship       Own-child      1502  0.916667  0.478261  0.628571
+4  relationship  Other-relative       278       1.0  0.538462       0.7
+5  relationship            Wife       459   0.73743   0.60274  0.663317
+root - INFO - Performance on slice race
+root - INFO -   feature       feature value n_samples precision    recall     fbeta
+0    race               White      8337   0.77967  0.658163  0.713783
+1    race               Black       938   0.72093  0.613861  0.663102
+2    race  Amer-Indian-Eskimo        86  0.833333     0.625  0.714286
+3    race  Asian-Pac-Islander       323  0.714286    0.5625  0.629371
+4    race               Other        85  0.666667  0.571429  0.615385
+root - INFO - Performance on slice sex
+root - INFO -   feature feature value n_samples precision    recall     fbeta
+0     sex        Female      3242  0.777778  0.529412      0.63
+1     sex          Male      6527  0.774453  0.674687  0.721136
+root - INFO - Performance on slice native-country
+root - INFO -            feature               feature value  ...    recall     fbeta
+0   native-country               United-States  ...  0.652966  0.709105
+1   native-country                     Germany  ...  0.727273  0.727273
+2   native-country                      Mexico  ...       0.7  0.736842
+3   native-country                      Poland  ...       0.5       0.5
+4   native-country                    Cambodia  ...       1.0       1.0
+5   native-country                      Canada  ...       0.8  0.774194
+6   native-country                     Ireland  ...       0.0       0.0
+7   native-country                           ?  ...  0.632653  0.673913
+8   native-country                       China  ...  0.666667  0.666667
+9   native-country                       South  ...      0.25  0.285714
+10  native-country                 Puerto-Rico  ...       1.0  0.666667
+11  native-country                 Philippines  ...  0.526316  0.666667
+12  native-country                        Peru  ...       1.0       0.0
+13  native-country                    Scotland  ...       1.0       1.0
+14  native-country                     England  ...  0.733333  0.846154
+15  native-country                     Jamaica  ...      0.25  0.333333
+16  native-country                        Cuba  ...       0.6      0.75
+17  native-country                      Greece  ...       1.0       1.0
+18  native-country                       Japan  ...       0.9  0.857143
+19  native-country                        Iran  ...      0.75  0.857143
+20  native-country                     Vietnam  ...  0.333333       0.5
+21  native-country                    Columbia  ...       1.0  0.666667
+22  native-country                 El-Salvador  ...       1.0       1.0
+23  native-country                   Guatemala  ...       1.0       1.0
+24  native-country                      France  ...       0.6       0.6
+25  native-country                     Ecuador  ...       1.0       1.0
+26  native-country                       Italy  ...  0.727273  0.842105
+27  native-country                       India  ...  0.571429  0.615385
+28  native-country                    Portugal  ...       0.0       0.0
+29  native-country                       Haiti  ...       1.0       1.0
+30  native-country                      Taiwan  ...       0.8       0.8
+31  native-country                        Hong  ...       1.0       1.0
+32  native-country          Dominican-Republic  ...       1.0       1.0
+33  native-country                  Yugoslavia  ...       0.0       0.0
+34  native-country  Outlying-US(Guam-USVI-etc)  ...       1.0       1.0
+35  native-country                   Nicaragua  ...       1.0       1.0
+36  native-country             Trinadad&Tobago  ...       0.0       0.0
+37  native-country                    Thailand  ...       1.0       1.0
+38  native-country                        Laos  ...       1.0       0.0
+39  native-country                    Honduras  ...       1.0       1.0
+40  native-country                     Hungary  ...       0.0       0.0
+
+[41 rows x 6 columns]
