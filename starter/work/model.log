@@ -1,7 +1,3 @@
-root - INFO - Searching best hyperparameters on 11 cores
-root - INFO - ********* Best parameters found ***********
-root - INFO - BEST PARAMS: {'bootstrap': True, 'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 100}
-root - INFO - Model saved to disk: ../model
 root - INFO - Classification target labels: ['<=50K', '>50K']
 root - INFO - precision:0.771, recall:0.597, fbeta:0.673
 root - INFO - Confusion matrix:
