@@ -3,8 +3,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.exceptions import NotFittedError
 
-from starter.work.ml.model import inference, compute_model_metrics, compute_confusion_matrix
-from starter.work.ml.data import process_data
+from work.ml.model import inference, compute_model_metrics, compute_confusion_matrix
+from work.ml.data import process_data
 
 DATA_PATH = "./data/census.csv"
 MODEL_PATH = "./model/trained_model.pkl"

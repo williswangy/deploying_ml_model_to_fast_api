@@ -4,9 +4,9 @@ import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from starter.work.ml.data import process_data
+from work.ml.data import process_data
 
-from starter.work.ml.model import train_model, compute_model_metrics, inference, compute_slices, compute_confusion_matrix
+from work.ml.model import train_model, compute_model_metrics, inference, compute_slices, compute_confusion_matrix
 
 logging.basicConfig(filename='journal.log', level=logging.INFO, filemode='a', format='%(name)s - %(levelname)s - %(message)s')
 
