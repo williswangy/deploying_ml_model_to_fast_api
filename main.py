@@ -6,7 +6,7 @@ import os, pickle
 from work.ml.data import process_data
 
 # path to saved artifacts
-SAVEPATH = './model'
+SAVEPATH = 'model'
 FILENAME = ['trained_model.pkl', 'encoder.pkl', 'labelizer.pkl']
 
 # Instantiate FastAPI app
