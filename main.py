@@ -22,7 +22,7 @@ class InputData(BaseModel):
     education: str
     education_num: int
     marital_status: str
-    occupation: strls
+    occupation: str
     relationship: str
     race: str
     sex: str
